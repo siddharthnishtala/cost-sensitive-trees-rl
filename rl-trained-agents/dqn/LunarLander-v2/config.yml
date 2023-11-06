@@ -1,0 +1,19 @@
+batch_size: 128
+buffer_size: 50000
+env: LunarLander-v2
+exploration_final_eps: 0.1
+exploration_fraction: 0.12
+exploration_initial_eps: 1.0
+gamma: 0.99
+gradient_steps: -1
+learning_starts: 0
+lr: 0.00063
+n_timesteps: 200000
+policy: MlpPolicy
+policy_kwargs:
+  net_arch:
+  - 256
+  - 256
+seed: 0
+target_update_interval: 250
+train_freq: 4

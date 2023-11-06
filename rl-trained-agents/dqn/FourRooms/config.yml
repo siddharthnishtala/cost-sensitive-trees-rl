@@ -1,0 +1,19 @@
+batch_size: 64
+buffer_size: 100000
+env: FourRooms
+exploration_final_eps: 0.04
+exploration_fraction: 0.4
+exploration_initial_eps: 1.0
+gamma: 0.99
+gradient_steps: 128
+learning_starts: 1000
+lr: 0.0001
+n_timesteps: 1000000
+policy: MlpPolicy
+policy_kwargs:
+  net_arch:
+  - 256
+  - 256
+seed: 0
+target_update_interval: 10
+train_freq: 256
